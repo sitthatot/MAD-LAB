@@ -2995,3 +2995,229 @@ Finished building: default.size.stdout
  
 Finished building: LAB3.list
  
+15:54:17 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:52:13: warning: 'MPU_Initialize' declared 'static' but never defined [-Wunused-function]
+   52 | static void MPU_Initialize(void);
+      |             ^~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m7 -T"D:\KMITL\3D\semester 1\Microcontroller\MAD_LAB\LAB3\STM32F767ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+   text	   data	    bss	    dec	    hex	filename
+  12740	     24	   1704	  14468	   3884	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+ 
+15:55:02 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:52:13: warning: 'MPU_Initialize' declared 'static' but never defined [-Wunused-function]
+   52 | static void MPU_Initialize(void);
+      |             ^~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m7 -T"D:\KMITL\3D\semester 1\Microcontroller\MAD_LAB\LAB3\STM32F767ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+   text	   data	    bss	    dec	    hex	filename
+  12724	     24	   1704	  14452	   3874	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+ 
+15:57:59 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:52:13: warning: 'MPU_Initialize' declared 'static' but never defined [-Wunused-function]
+   52 | static void MPU_Initialize(void);
+      |             ^~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m7 -T"D:\KMITL\3D\semester 1\Microcontroller\MAD_LAB\LAB3\STM32F767ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+   text	   data	    bss	    dec	    hex	filename
+  11632	     24	   1704	  13360	   3430	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+ 
+15:58:44 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:52:13: warning: 'MPU_Initialize' declared 'static' but never defined [-Wunused-function]
+   52 | static void MPU_Initialize(void);
+      |             ^~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m7 -T"D:\KMITL\3D\semester 1\Microcontroller\MAD_LAB\LAB3\STM32F767ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+   text	   data	    bss	    dec	    hex	filename
+  11648	     24	   1704	  13376	   3440	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+ 
+16:03:51 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:125:46: error: 'ch1' undeclared (first use in this function)
+  125 |          HAL_UART_Receive(&huart3,(uint8_t*)&ch1,1,1000);
+      |                                              ^~~
+../Core/Src/main.c:125:46: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:160:71: error: 'newLine' undeclared (first use in this function)
+  160 |                                   HAL_UART_Transmit(&huart3,(uint8_t*)newLine,strlen(newLine),1000);
+      |                                                                       ^~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:52:13: warning: 'MPU_Initialize' declared 'static' but never defined [-Wunused-function]
+   52 | static void MPU_Initialize(void);
+      |             ^~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:40: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+16:04:08 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:125:46: error: 'ch1' undeclared (first use in this function)
+  125 |          HAL_UART_Receive(&huart3,(uint8_t*)&ch1,1,1000);
+      |                                              ^~~
+../Core/Src/main.c:125:46: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:160:71: error: 'newLine' undeclared (first use in this function)
+  160 |                                   HAL_UART_Transmit(&huart3,(uint8_t*)newLine,strlen(newLine),1000);
+      |                                                                       ^~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:52:13: warning: 'MPU_Initialize' declared 'static' but never defined [-Wunused-function]
+   52 | static void MPU_Initialize(void);
+      |             ^~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:40: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+16:04:18 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:160:71: error: 'newLine' undeclared (first use in this function)
+  160 |                                   HAL_UART_Transmit(&huart3,(uint8_t*)newLine,strlen(newLine),1000);
+      |                                                                       ^~~~~~~
+../Core/Src/main.c:160:71: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:52:13: warning: 'MPU_Initialize' declared 'static' but never defined [-Wunused-function]
+   52 | static void MPU_Initialize(void);
+      |             ^~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:40: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+16:04:32 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:160:71: error: 'newLine' undeclared (first use in this function)
+  160 |                                   HAL_UART_Transmit(&huart3,(uint8_t*)newLine,strlen(newLine),1000);
+      |                                                                       ^~~~~~~
+../Core/Src/main.c:160:71: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:52:13: warning: 'MPU_Initialize' declared 'static' but never defined [-Wunused-function]
+   52 | static void MPU_Initialize(void);
+      |             ^~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:40: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+16:05:01 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:52:13: warning: 'MPU_Initialize' declared 'static' but never defined [-Wunused-function]
+   52 | static void MPU_Initialize(void);
+      |             ^~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m7 -T"D:\KMITL\3D\semester 1\Microcontroller\MAD_LAB\LAB3\STM32F767ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+   text	   data	    bss	    dec	    hex	filename
+  12136	     24	   1704	  13864	   3628	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+ 
+16:05:24 **** Incremental Build of configuration Debug for project LAB2 ****
+make -j12 all 
+arm-none-eabi-size   LAB2.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7052	     72	   1568	   8692	   21f4	LAB2.elf
+Finished building: default.size.stdout
+ 
+16:05:24 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-size   LAB3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12136	     24	   1704	  13864	   3628	LAB3.elf
+Finished building: default.size.stdout
+ 
+16:05:25 **** Incremental Build of configuration Debug for project Lab01 ****
+make -j12 all 
+arm-none-eabi-size   Lab01.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6924	     20	   1572	   8516	   2144	Lab01.elf
+Finished building: default.size.stdout
+ 
+16:05:25 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-size   LAB3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12136	     24	   1704	  13864	   3628	LAB3.elf
+Finished building: default.size.stdout
+ 
+16:05:56 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:52:13: warning: 'MPU_Initialize' declared 'static' but never defined [-Wunused-function]
+   52 | static void MPU_Initialize(void);
+      |             ^~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m7 -T"D:\KMITL\3D\semester 1\Microcontroller\MAD_LAB\LAB3\STM32F767ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+   text	   data	    bss	    dec	    hex	filename
+  12120	     24	   1704	  13848	   3618	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+ 
+16:08:45 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:52:13: warning: 'MPU_Initialize' declared 'static' but never defined [-Wunused-function]
+   52 | static void MPU_Initialize(void);
+      |             ^~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m7 -T"D:\KMITL\3D\semester 1\Microcontroller\MAD_LAB\LAB3\STM32F767ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+   text	   data	    bss	    dec	    hex	filename
+  12136	     24	   1704	  13864	   3628	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+ 
+16:12:51 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:52:13: warning: 'MPU_Initialize' declared 'static' but never defined [-Wunused-function]
+   52 | static void MPU_Initialize(void);
+      |             ^~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "LAB3.elf" @"objects.list"   -mcpu=cortex-m7 -T"D:\KMITL\3D\semester 1\Microcontroller\MAD_LAB\LAB3\STM32F767ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3.elf
+ 
+arm-none-eabi-size   LAB3.elf 
+arm-none-eabi-objdump -h -S  LAB3.elf  > "LAB3.list"
+   text	   data	    bss	    dec	    hex	filename
+  12120	     24	   1704	  13848	   3618	LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB3.list
+ 

@@ -6,8 +6,9 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="USART3"/>
+		<item key="selection" value="RXNE"/>
 		<list key="findhistory">
+			<item value="RXNE"/>
 			<item value="USART3_Msp"/>
 			<item value="USART3"/>
 			<item value="HAL_UART_MspInit()"/>

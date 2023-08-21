@@ -476,8 +476,8 @@ void MX_GPIO_Init(void)
  8000606:	f000 fc55 	bl	8000eb4 <HAL_GPIO_Init>
 
   /* EXTI interrupt init*/
-  HAL_NVIC_SetPriority(EXTI0_IRQn, 1, 0);
- 800060a:	2200      	movs	r2, #0
+  HAL_NVIC_SetPriority(EXTI0_IRQn, 1, 3);
+ 800060a:	2203      	movs	r2, #3
  800060c:	2101      	movs	r1, #1
  800060e:	2006      	movs	r0, #6
  8000610:	f000 fb9d 	bl	8000d4e <HAL_NVIC_SetPriority>
@@ -485,8 +485,8 @@ void MX_GPIO_Init(void)
  8000614:	2006      	movs	r0, #6
  8000616:	f000 fbb6 	bl	8000d86 <HAL_NVIC_EnableIRQ>
 
-  HAL_NVIC_SetPriority(EXTI15_10_IRQn, 1, 0);
- 800061a:	2200      	movs	r2, #0
+  HAL_NVIC_SetPriority(EXTI15_10_IRQn, 1, 1);
+ 800061a:	2201      	movs	r2, #1
  800061c:	2101      	movs	r1, #1
  800061e:	2028      	movs	r0, #40	; 0x28
  8000620:	f000 fb95 	bl	8000d4e <HAL_NVIC_SetPriority>

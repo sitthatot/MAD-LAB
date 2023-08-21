@@ -4221,3 +4221,110 @@ arm-none-eabi-size   LAB4.elf
   11924	     20	   1708	  13652	   3554	LAB4.elf
 Finished building: default.size.stdout
  
+15:05:21 **** Incremental Build of configuration Debug for project LAB4 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/gpio.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/gpio.d" -MT"Core/Src/gpio.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/gpio.o"
+arm-none-eabi-gcc "../Core/Src/stm32f7xx_hal_msp.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f7xx_hal_msp.d" -MT"Core/Src/stm32f7xx_hal_msp.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f7xx_hal_msp.o"
+arm-none-eabi-gcc -o "LAB4.elf" @"objects.list"   -mcpu=cortex-m7 -T"D:\KMITL\3D\semester 1\Microcontroller\MAD_LAB\LAB4\STM32F767ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB4.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB4.elf
+ 
+arm-none-eabi-size   LAB4.elf 
+arm-none-eabi-objdump -h -S  LAB4.elf  > "LAB4.list"
+   text	   data	    bss	    dec	    hex	filename
+  11924	     20	   1708	  13652	   3554	LAB4.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB4.list
+ 
+15:21:07 **** Incremental Build of configuration Debug for project LAB2 ****
+make -j12 all 
+arm-none-eabi-size   LAB2.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7052	     72	   1568	   8692	   21f4	LAB2.elf
+Finished building: default.size.stdout
+ 
+15:21:07 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-size   LAB3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12120	     24	   1704	  13848	   3618	LAB3.elf
+Finished building: default.size.stdout
+ 
+15:21:07 **** Incremental Build of configuration Debug for project LAB4 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/gpio.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/gpio.d" -MT"Core/Src/gpio.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/gpio.o"
+arm-none-eabi-gcc -o "LAB4.elf" @"objects.list"   -mcpu=cortex-m7 -T"D:\KMITL\3D\semester 1\Microcontroller\MAD_LAB\LAB4\STM32F767ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB4.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB4.elf
+ 
+arm-none-eabi-size   LAB4.elf 
+arm-none-eabi-objdump -h -S  LAB4.elf  > "LAB4.list"
+   text	   data	    bss	    dec	    hex	filename
+  11924	     20	   1708	  13652	   3554	LAB4.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB4.list
+ 
+15:21:08 **** Incremental Build of configuration Debug for project Lab01 ****
+make -j12 all 
+arm-none-eabi-size   Lab01.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6924	     20	   1572	   8516	   2144	Lab01.elf
+Finished building: default.size.stdout
+ 
+15:21:14 **** Incremental Build of configuration Debug for project LAB4 ****
+make -j12 all 
+arm-none-eabi-size   LAB4.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11924	     20	   1708	  13652	   3554	LAB4.elf
+Finished building: default.size.stdout
+ 
+15:34:16 **** Incremental Build of configuration Debug for project LAB2 ****
+make -j12 all 
+arm-none-eabi-size   LAB2.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7052	     72	   1568	   8692	   21f4	LAB2.elf
+Finished building: default.size.stdout
+ 
+15:34:16 **** Incremental Build of configuration Debug for project LAB3 ****
+make -j12 all 
+arm-none-eabi-size   LAB3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12120	     24	   1704	  13848	   3618	LAB3.elf
+Finished building: default.size.stdout
+ 
+15:34:17 **** Incremental Build of configuration Debug for project LAB4 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/gpio.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/gpio.d" -MT"Core/Src/gpio.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/gpio.o"
+arm-none-eabi-gcc "../Core/Src/stm32f7xx_hal_msp.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f7xx_hal_msp.d" -MT"Core/Src/stm32f7xx_hal_msp.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f7xx_hal_msp.o"
+arm-none-eabi-gcc -o "LAB4.elf" @"objects.list"   -mcpu=cortex-m7 -T"D:\KMITL\3D\semester 1\Microcontroller\MAD_LAB\LAB4\STM32F767ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB4.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB4.elf
+ 
+arm-none-eabi-size   LAB4.elf 
+arm-none-eabi-objdump -h -S  LAB4.elf  > "LAB4.list"
+   text	   data	    bss	    dec	    hex	filename
+  11924	     20	   1708	  13652	   3554	LAB4.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB4.list
+ 
+15:34:17 **** Incremental Build of configuration Debug for project Lab01 ****
+make -j12 all 
+arm-none-eabi-size   Lab01.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6924	     20	   1572	   8516	   2144	Lab01.elf
+Finished building: default.size.stdout
+ 
+15:34:31 **** Incremental Build of configuration Debug for project LAB4 ****
+make -j12 all 
+arm-none-eabi-size   LAB4.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11924	     20	   1708	  13652	   3554	LAB4.elf
+Finished building: default.size.stdout
+ 
+15:34:39 **** Incremental Build of configuration Debug for project LAB4 ****
+make -j12 all 
+arm-none-eabi-size   LAB4.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11924	     20	   1708	  13652	   3554	LAB4.elf
+Finished building: default.size.stdout
+ 

@@ -157,7 +157,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 	if(GPIO_Pin == GPIO_PIN_13)
 	{
 		HAL_UART_Transmit(&huart3, (uint8_t *)"---", 3, 100);
-		HAL_Delay(10);
+		HAL_Delay(200);
 
 		for(int i=0; i<20; i++)
 		{
@@ -165,6 +165,18 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 			HAL_Delay(200);
 		}
 	}
+
+	else if(GPIO_Pin == GPIO_PIN_0)
+		{
+			HAL_UART_Transmit(&huart3, (uint8_t *)"---", 3, 100);
+			HAL_Delay(200);
+
+			for(int i=0; i<20; i++)
+			{
+				HAL_UART_Transmit(&huart3, (uint8_t *)"E", 1, 100);
+				HAL_Delay(200);
+			}
+		}
 }
 /* USER CODE END 4 */
 

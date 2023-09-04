@@ -1,5 +1,7 @@
-../Core/Src/main.c:65:6:displayHEX	1
-../Core/Src/main.c:70:6:FindVin	1
-../Core/Src/main.c:81:5:main	3
-../Core/Src/main.c:148:6:SystemClock_Config	3
-../Core/Src/main.c:195:6:Error_Handler	1
+../Core/Src/main.c:68:6:displayHEX	1
+../Core/Src/main.c:73:6:FindVin	1
+../Core/Src/main.c:78:5:average_8	2
+../Core/Src/main.c:92:5:average_16	2
+../Core/Src/main.c:111:5:main	3
+../Core/Src/main.c:182:6:SystemClock_Config	3
+../Core/Src/main.c:229:6:Error_Handler	1

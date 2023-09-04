@@ -52,6 +52,9 @@
  char vin_str[100];
  float vin;
  uint32_t hex1 = 501;
+ int adc_avg_8;
+ int adc_avg_16;
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -70,7 +73,34 @@ void displayHEX(uint32_t myNumber){
 void FindVin(uint32_t num){
 	vin = (3.6f*num)/4096.0f;
 	sprintf(vin_str,"%.2f",vin);
+}
 
+int average_8(int x)
+{
+	static int samples[8];
+	static int i = 0;
+	static int total = 0;
+
+	total += x - samples[i];
+	samples[i] = x;
+
+	i = (i==7 ? 0 : i+1);
+
+	return total>>3;
+}
+
+int average_16(int x)
+{
+	static int samples[16];
+	static int i = 0;
+	static int total = 0;
+
+	total += x - samples[i];
+	samples[i] = x;
+
+	i = (i==15 ? 0 : i+1);
+
+	return total>>4;
 }
 /* USER CODE END 0 */
 
@@ -117,7 +147,7 @@ int main(void)
   {
 	  while(HAL_ADC_PollForConversion(&hadc1, 100) != HAL_OK){}
 	  adc_val = HAL_ADC_GetValue(&hadc1);
-	  displayHEX(adc_val);
+	  //displayHEX(adc_val);
 	  //while(__HAL_UART_GET_FLAG(&huart3,UART_FLAG_TC) == RESET){}
 	  //HAL_UART_Transmit(&huart3, (uint8_t*) &toHex, strlen(toHex),1000);
 
@@ -125,13 +155,17 @@ int main(void)
 
 	  while(__HAL_UART_GET_FLAG(&huart3,UART_FLAG_TC) == RESET){} //เช็�?ว่า Transmission complete รึยัง
 	  FindVin(adc_val);
+	  adc_avg_8 = average_8(adc_val);
+	  adc_avg_16 = average_16(adc_val);
+	  displayHEX(adc_avg_8);
+
 	  char text[] = "ADC1_CH10 ";
 	  char volt[] = "   Vin = ";
 	  HAL_UART_Transmit(&huart3, (uint8_t*) &text, strlen(text),1000);
 	  HAL_UART_Transmit(&huart3, (uint8_t*) &toHex, strlen(toHex),1000);
 	  HAL_UART_Transmit(&huart3, (uint8_t*) &volt, strlen(volt),1000);
 	  HAL_UART_Transmit(&huart3, (uint8_t*) &vin_str, strlen(vin_str),1000);
-	  char new[] = "V \r\n ";
+	  char new[] = " V \r\n ";
 	  HAL_UART_Transmit(&huart3, (uint8_t*) &new, strlen(new),1000);
 	  HAL_Delay(1000);
     /* USER CODE END WHILE */

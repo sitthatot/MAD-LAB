@@ -49,6 +49,8 @@
 /* USER CODE BEGIN PV */
  volatile uint32_t adc_val = 0;
  char toHex[100];
+ char vin_str[100];
+ float vin;
  uint32_t hex1 = 501;
 /* USER CODE END PV */
 
@@ -61,8 +63,15 @@ void SystemClock_Config(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 void displayHEX(uint32_t myNumber){
-	sprintf(toHex,"0x00000%X",myNumber);
+
+	sprintf(toHex,"0x%08X",myNumber);
 };
+
+void FindVin(uint32_t num){
+	vin = (3.6f*num)/4096.0f;
+	sprintf(vin_str,"%.2f",vin);
+
+}
 /* USER CODE END 0 */
 
 /**
@@ -115,7 +124,15 @@ int main(void)
 	  //displayHEX(hex1);
 
 	  while(__HAL_UART_GET_FLAG(&huart3,UART_FLAG_TC) == RESET){} //เช็�?ว่า Transmission complete รึยัง
+	  FindVin(adc_val);
+	  char text[] = "ADC1_CH10 ";
+	  char volt[] = "   Vin = ";
+	  HAL_UART_Transmit(&huart3, (uint8_t*) &text, strlen(text),1000);
 	  HAL_UART_Transmit(&huart3, (uint8_t*) &toHex, strlen(toHex),1000);
+	  HAL_UART_Transmit(&huart3, (uint8_t*) &volt, strlen(volt),1000);
+	  HAL_UART_Transmit(&huart3, (uint8_t*) &vin_str, strlen(vin_str),1000);
+	  char new[] = "V \r\n ";
+	  HAL_UART_Transmit(&huart3, (uint8_t*) &new, strlen(new),1000);
 	  HAL_Delay(1000);
     /* USER CODE END WHILE */
 

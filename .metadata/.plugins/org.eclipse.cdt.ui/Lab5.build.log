@@ -1,4 +1,4 @@
-17:51:31 **** Incremental Build of configuration Debug for project Lab5 ****
+18:35:20 **** Incremental Build of configuration Debug for project Lab5 ****
 make -j12 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
 ../Core/Src/main.c: In function 'displayHEX':
@@ -15,11 +15,11 @@ Finished building target: Lab5.elf
 arm-none-eabi-size   Lab5.elf 
 arm-none-eabi-objdump -h -S  Lab5.elf  > "Lab5.list"
    text	   data	    bss	    dec	    hex	filename
-  28792	    476	   2540	  31808	   7c40	Lab5.elf
+  28832	    476	   2540	  31848	   7c68	Lab5.elf
 Finished building: default.size.stdout
  
 Finished building: Lab5.list
  
 
-17:51:31 Build Finished. 0 errors, 1 warnings. (took 650ms)
+18:35:21 Build Finished. 0 errors, 1 warnings. (took 650ms)
 

@@ -168,46 +168,6 @@ int main(void)
 	  char new[] = " V \r\n ";
 	  HAL_UART_Transmit(&huart3, (uint8_t*) &new, strlen(new),1000);
 	  HAL_Delay(1000);
-
-	  if(adc_avg_16>=0 && adc_avg_16<=818)
-	  {
-		  	HAL_GPIO_WritePin(GPIOE,GPIO_PIN_9,GPIO_PIN_RESET);
-			HAL_GPIO_WritePin(GPIOE,GPIO_PIN_11,GPIO_PIN_RESET);
-			HAL_GPIO_WritePin(GPIOF,GPIO_PIN_14,GPIO_PIN_RESET);
-			HAL_GPIO_WritePin(GPIOE,GPIO_PIN_13,GPIO_PIN_RESET);
-	  }
-
-	  else if(adc_avg_16>=819 && adc_avg_16<=1636)
-	 {
-	  		  	HAL_GPIO_WritePin(GPIOE,GPIO_PIN_9,GPIO_PIN_SET);
-	  			HAL_GPIO_WritePin(GPIOE,GPIO_PIN_11,GPIO_PIN_RESET);
-	  			HAL_GPIO_WritePin(GPIOF,GPIO_PIN_14,GPIO_PIN_RESET);
-	  			HAL_GPIO_WritePin(GPIOE,GPIO_PIN_13,GPIO_PIN_RESET);
-	  	  }
-	  else if(adc_avg_16>=1637 && adc_avg_16<=2455)
-	  	  {
-			HAL_GPIO_WritePin(GPIOE,GPIO_PIN_9,GPIO_PIN_SET);
-			HAL_GPIO_WritePin(GPIOE,GPIO_PIN_11,GPIO_PIN_SET);
-			HAL_GPIO_WritePin(GPIOF,GPIO_PIN_14,GPIO_PIN_RESET);
-			HAL_GPIO_WritePin(GPIOE,GPIO_PIN_13,GPIO_PIN_RESET);
-	  	  }
-
-	  else if(adc_avg_16>=2456 && adc_avg_16<=3274)
-	  	  	  {
-	  	  		  	HAL_GPIO_WritePin(GPIOE,GPIO_PIN_9,GPIO_PIN_SET);
-	  	  			HAL_GPIO_WritePin(GPIOE,GPIO_PIN_11,GPIO_PIN_SET);
-	  	  			HAL_GPIO_WritePin(GPIOF,GPIO_PIN_14,GPIO_PIN_SET);
-	  	  			HAL_GPIO_WritePin(GPIOE,GPIO_PIN_13,GPIO_PIN_RESET);
-	  	  	  }
-
-	  else if(adc_avg_16>=3275 && adc_avg_16<=4095)
-	  	  	  	  {
-	  	  	  		HAL_GPIO_WritePin(GPIOE,GPIO_PIN_9,GPIO_PIN_SET);
-	  	  	  		HAL_GPIO_WritePin(GPIOE,GPIO_PIN_11,GPIO_PIN_SET);
-	  	  	  		HAL_GPIO_WritePin(GPIOF,GPIO_PIN_14,GPIO_PIN_SET);
-	  	  	  		HAL_GPIO_WritePin(GPIOE,GPIO_PIN_13,GPIO_PIN_SET);
-	  	  	  	  }
-
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

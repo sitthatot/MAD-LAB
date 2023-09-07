@@ -2186,3 +2186,71 @@ java.nio.BufferUnderflowException
 
 !ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2023-09-04 18:35:28.244
 !MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 16000000; div: 8
+!SESSION 2023-09-07 13:30:15.703 -----------------------------------------------
+eclipse.buildId=Version 1.13.0
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2023-09-07 13:30:34.234
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2023-09-07 13:30:34.244
+!MESSAGE Log4j2 initialized with config file D:\KMITL\3D\semester 1\Microcontroller\MAD_LAB\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-09-07 13:30:43.717
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2023-09-07 13:33:07.416 -----------------------------------------------
+eclipse.buildId=Version 1.13.0
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  D:\KMITL\3D\semester 1\Microcontroller\MAD_LAB\Lab5SP\.project
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 D:\KMITL\3D\semester 1\Microcontroller\MAD_LAB\Lab5SP\.project
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2023-09-07 13:33:11.943
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2023-09-07 13:33:11.944
+!MESSAGE Log4j2 initialized with config file D:\KMITL\3D\semester 1\Microcontroller\MAD_LAB\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-09-07 13:33:17.469
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2023-09-07 13:34:03.328 -----------------------------------------------
+eclipse.buildId=Version 1.13.0
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2023-09-07 13:34:07.859
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2023-09-07 13:34:07.861
+!MESSAGE Log4j2 initialized with config file D:\KMITL\3D\semester 1\Microcontroller\MAD_LAB\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-09-07 13:34:13.762
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-09-07 13:36:32.645
+!MESSAGE Indexed 'LAB_SP2' (20 sources, 82 headers) in 2.76 sec: 5,654 declarations; 30,919 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0055%)
+!SESSION 2023-09-07 13:41:05.717 -----------------------------------------------
+eclipse.buildId=Version 1.13.0
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  D:\KMITL\3D\semester 1\Microcontroller\MAD_LAB\LAB_SP2\.project
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 D:\KMITL\3D\semester 1\Microcontroller\MAD_LAB\LAB_SP2\.project
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2023-09-07 13:41:10.273
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2023-09-07 13:41:10.274
+!MESSAGE Log4j2 initialized with config file D:\KMITL\3D\semester 1\Microcontroller\MAD_LAB\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-09-07 13:41:16.358
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-09-07 13:41:23.611
+!MESSAGE Indexed 'LAB_SP2' (20 sources, 107 headers) in 2.63 sec: 9,593 declarations; 45,168 references; 2 unresolved inclusions; 42 syntax errors; 147 unresolved names (0.27%)

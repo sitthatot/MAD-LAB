@@ -22,6 +22,9 @@
 #include "stm32f7xx_it.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "stdio.h"
+#include "string.h"
+#include "usart.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -36,12 +39,14 @@
 
 /* Private macro -------------------------------------------------------------*/
 /* USER CODE BEGIN PM */
-
+#define print(x) HAL_UART_Transmit(&huart3, (uint8_t*)x, strlen(x),1000)
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
 /* USER CODE BEGIN PV */
 extern uint32_t count;
+extern uint32_t second;
+extern uint32_t minute;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -225,6 +230,13 @@ void TIM1_UP_TIM10_IRQHandler(void)
   HAL_TIM_IRQHandler(&htim1);
   /* USER CODE BEGIN TIM1_UP_TIM10_IRQn 1 */
   count++;
+  second++;
+  if(second == 60)
+  	{
+  		minute++;
+
+  		second = 0;
+  	}
   /* USER CODE END TIM1_UP_TIM10_IRQn 1 */
 }
 
@@ -238,7 +250,15 @@ void TIM2_IRQHandler(void)
   /* USER CODE END TIM2_IRQn 0 */
   HAL_TIM_IRQHandler(&htim2);
   /* USER CODE BEGIN TIM2_IRQn 1 */
-
+  //displayTime();
+  char toMinute[10];
+  char toSecond[10];
+  sprintf(toMinute,"%02d",minute);
+  sprintf(toSecond,"%02d",second);
+  print("\r");
+  print(toMinute);
+  print(":");
+  print(toSecond);
   /* USER CODE END TIM2_IRQn 1 */
 }
 

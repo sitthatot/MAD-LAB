@@ -6,8 +6,9 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="true"/>
-		<item key="selection" value="HAL_TIM_Base_MspInit"/>
+		<item key="selection" value="huart"/>
 		<list key="findhistory">
+			<item value="huart"/>
 			<item value="HAL_TIM_Base_MspInit"/>
 			<item value="HAL_TIM_Base"/>
 			<item value="TIM_HadleTypeDef htim1"/>
@@ -22,7 +23,6 @@
 			<item value="HAL_UART_MspInit()"/>
 			<item value="HAL_UART_Msp"/>
 			<item value="UART_Handle"/>
-			<item value="setLed"/>
 		</list>
 		<list key="replacehistory">
 			<item value="newSetLed"/>

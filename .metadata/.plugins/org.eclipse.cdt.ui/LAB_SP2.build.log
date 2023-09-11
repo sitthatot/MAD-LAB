@@ -1,0 +1,12 @@
+17:03:03 **** Incremental Build of configuration Debug for project LAB_SP2 ****
+make -j12 all 
+arm-none-eabi-gcc -o "LAB_SP2.elf" @"objects.list"   -mcpu=cortex-m7 -T"D:\KMITL\3D\semester 1\Microcontroller\MAD_LAB\LAB_SP2\STM32F767ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB_SP2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.13.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o:D:/KMITL/3D/semester 1/Microcontroller/MAD_LAB/LAB_SP2/Debug/../Core/Src/main.c:51: multiple definition of `hadc1'; ./Core/Src/adc.o:D:/KMITL/3D/semester 1/Microcontroller/MAD_LAB/LAB_SP2/Debug/../Core/Src/adc.c:27: first defined here
+C:/ST/STM32CubeIDE_1.13.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o:D:/KMITL/3D/semester 1/Microcontroller/MAD_LAB/LAB_SP2/Debug/../Core/Src/main.c:52: multiple definition of `hdma_adc1'; ./Core/Src/adc.o:D:/KMITL/3D/semester 1/Microcontroller/MAD_LAB/LAB_SP2/Debug/../Core/Src/adc.c:28: first defined here
+C:/ST/STM32CubeIDE_1.13.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/usart.o:D:/KMITL/3D/semester 1/Microcontroller/MAD_LAB/LAB_SP2/Debug/../Core/Src/usart.c:27: multiple definition of `huart3'; ./Core/Src/main.o:D:/KMITL/3D/semester 1/Microcontroller/MAD_LAB/LAB_SP2/Debug/../Core/Src/main.c:53: first defined here
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:64: LAB_SP2.elf] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+
+17:03:03 Build Failed. 4 errors, 0 warnings. (took 394ms)
+

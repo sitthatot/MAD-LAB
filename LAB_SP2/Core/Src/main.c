@@ -25,7 +25,9 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "string.h"
+#include "stdint.h"
+#include "stdio.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -46,7 +48,15 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-
+ADC_HandleTypeDef hadc1;
+DMA_HandleTypeDef hdma_adc1;
+UART_HandleTypeDef huart3;
+volatile uint32_t adc_val[2];
+volatile uint16_t adc_dma_result[3];
+char toHex[100];
+int adc_channel_count = sizeof(adc_val)/sizeof(adc_val[0]);
+uint8_t adc_conv_complete_flag = 0;
+char dma_result_buffer[100];
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -57,7 +67,10 @@ void SystemClock_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+void displayHEX(uint32_t myNumber){
 
+	sprintf(toHex,"0x%08X",myNumber);
+};
 /* USER CODE END 0 */
 
 /**
@@ -92,6 +105,7 @@ int main(void)
   MX_ADC1_Init();
   MX_USART3_UART_Init();
   /* USER CODE BEGIN 2 */
+  HAL_ADC_Start_DMA(&hadc1, (uint32_t *)adc_val, adc_channel_count);
 
   /* USER CODE END 2 */
 
@@ -148,7 +162,11 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
-
+void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc){
+    // I set adc_conv_complete_flag variable to 1 when,
+    // HAL_ADC_ConvCpltCallback function is call.
+    adc_conv_complete_flag = 1;
+}
 /* USER CODE END 4 */
 
 /**

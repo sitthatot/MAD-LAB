@@ -1,4 +1,4 @@
-18:32:03 **** Incremental Build of configuration Debug for project LAB2 ****
+17:03:00 **** Incremental Build of configuration Debug for project LAB2 ****
 make -j12 all 
 arm-none-eabi-size   LAB2.elf 
    text	   data	    bss	    dec	    hex	filename
@@ -6,5 +6,5 @@ arm-none-eabi-size   LAB2.elf
 Finished building: default.size.stdout
  
 
-18:32:03 Build Finished. 0 errors, 0 warnings. (took 214ms)
+17:03:00 Build Finished. 0 errors, 0 warnings. (took 374ms)
 

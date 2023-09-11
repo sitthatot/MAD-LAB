@@ -1,7 +1,7 @@
-../Core/Src/main.c:68:6:displayHEX	16	static
-../Core/Src/main.c:73:6:FindVin	16	static
-../Core/Src/main.c:78:5:average_8	16	static
-../Core/Src/main.c:92:5:average_16	16	static
-../Core/Src/main.c:111:5:main	40	static
-../Core/Src/main.c:221:6:SystemClock_Config	88	static
-../Core/Src/main.c:268:6:Error_Handler	4	static,ignoring_inline_asm
+../Core/Src/main.c:58:6:displayHEX	16	static
+../Core/Src/main.c:61:6:FindVin	16	static
+../Core/Src/main.c:66:5:average_8	16	static
+../Core/Src/main.c:80:5:average_16	16	static
+../Core/Src/main.c:99:5:main	40	static
+../Core/Src/main.c:157:6:SystemClock_Config	88	static
+../Core/Src/main.c:195:6:Error_Handler	4	static,ignoring_inline_asm

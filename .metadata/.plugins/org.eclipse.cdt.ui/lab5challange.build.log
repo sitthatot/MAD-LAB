@@ -1,0 +1,10 @@
+15:33:36 **** Incremental Build of configuration Debug for project lab5challange ****
+make -j12 all 
+arm-none-eabi-size   lab5challange.elf 
+   text	   data	    bss	    dec	    hex	filename
+  16116	     20	   2148	  18284	   476c	lab5challange.elf
+Finished building: default.size.stdout
+ 
+
+15:33:36 Build Finished. 0 errors, 0 warnings. (took 138ms)
+

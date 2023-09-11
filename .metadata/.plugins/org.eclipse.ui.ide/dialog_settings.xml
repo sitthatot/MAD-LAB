@@ -24,6 +24,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\sitth\OneDrive - KMITL\Desktop\MAD-main"/>
 			<item value="D:\KMITL\3D\semester 1\Microcontroller\MAD_LAB\Lab5"/>
 		</list>
 	</section>

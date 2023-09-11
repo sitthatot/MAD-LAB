@@ -5,9 +5,14 @@
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
-		<item key="isRegEx" value="false"/>
-		<item key="selection" value="HAL_MspInit"/>
+		<item key="isRegEx" value="true"/>
+		<item key="selection" value="HAL_TIM_Base_MspInit"/>
 		<list key="findhistory">
+			<item value="HAL_TIM_Base_MspInit"/>
+			<item value="HAL_TIM_Base"/>
+			<item value="TIM_HadleTypeDef htim1"/>
+			<item value="hadc1"/>
+			<item value="DMA2"/>
 			<item value="HAL_MspInit"/>
 			<item value="EXTI15_10"/>
 			<item value="HAL_GPIO_EXTI_Call"/>

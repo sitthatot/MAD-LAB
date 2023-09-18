@@ -6,8 +6,10 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="true"/>
-		<item key="selection" value="huart"/>
+		<item key="selection" value=""/>
 		<list key="findhistory">
+			<item value="HAL_ADC"/>
+			<item value="HAL_ADC_ConvHalfCpltCallback"/>
 			<item value="huart"/>
 			<item value="HAL_TIM_Base_MspInit"/>
 			<item value="HAL_TIM_Base"/>
@@ -21,8 +23,6 @@
 			<item value="USART3_Msp"/>
 			<item value="USART3"/>
 			<item value="HAL_UART_MspInit()"/>
-			<item value="HAL_UART_Msp"/>
-			<item value="UART_Handle"/>
 		</list>
 		<list key="replacehistory">
 			<item value="newSetLed"/>

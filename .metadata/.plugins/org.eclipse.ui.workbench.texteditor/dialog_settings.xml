@@ -6,31 +6,31 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="true"/>
-		<item key="selection" value=""/>
+		<item key="selection" value="print"/>
 		<list key="findhistory">
+			<item value="print"/>
+			<item value="sprint"/>
+			<item value="16"/>
+			<item value="htim1"/>
+			<item value="htim2"/>
+			<item value="MX"/>
+			<item value="HAL_TIM_Base"/>
+			<item value="HAL_TIM"/>
+			<item value="start"/>
+			<item value="displayTime"/>
+			<item value="displayNumber"/>
 			<item value="HAL_ADC"/>
 			<item value="HAL_ADC_ConvHalfCpltCallback"/>
 			<item value="huart"/>
 			<item value="HAL_TIM_Base_MspInit"/>
-			<item value="HAL_TIM_Base"/>
-			<item value="TIM_HadleTypeDef htim1"/>
-			<item value="hadc1"/>
-			<item value="DMA2"/>
-			<item value="HAL_MspInit"/>
-			<item value="EXTI15_10"/>
-			<item value="HAL_GPIO_EXTI_Call"/>
-			<item value="RXNE"/>
-			<item value="USART3_Msp"/>
-			<item value="USART3"/>
-			<item value="HAL_UART_MspInit()"/>
 		</list>
 		<list key="replacehistory">
 			<item value="newSetLed"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="1313"/>
-		<item key="DIALOG_Y_ORIGIN" value="291"/>
+		<item key="DIALOG_X_ORIGIN" value="1162"/>
+		<item key="DIALOG_Y_ORIGIN" value="290"/>
 		<item key="DIALOG_WIDTH" value="414"/>
 		<item key="DIALOG_HEIGHT" value="454"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
